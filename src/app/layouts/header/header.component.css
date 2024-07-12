@@ -1,0 +1,57 @@
+header {
+    width: 100%;
+    height: 20%;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.logo {
+    width: 5rem;
+    border-radius: 100%;
+}
+
+.link {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--white-color);
+}
+
+.link:hover {
+    border-bottom: 0.2rem solid var(--red-opacity-color);
+    color: var(--red-opacity-color);
+}
+
+.container-logos {
+    width: 8rem;
+    height: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo-bottom {
+    border-radius: 50%;
+    padding: 0.5rem;
+    width: 3.5rem;
+    cursor: pointer;
+}
+
+.logo-bottom:hover {
+    box-shadow: 0px 0px 8px 0px var(--red-opacity-color);
+}
+
+.title {
+    padding-top: 1rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--white-color);
+    font-family: "Playwrite BR", cursive;
+    font-weight: 400;
+}

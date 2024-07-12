@@ -1,0 +1,46 @@
+<section class="section-main">
+    <div class="header-main">
+        <div class="container-item-filter" (click)="filterByCategory('all')">
+            <img src="https://cdn-icons-png.flaticon.com/128/4254/4254068.png" alt="todo" class="img-filter">
+            <p class="p-filter">TODOS</p>
+        </div>
+        <div class="container-item-filter" (click)="filterByCategory('drink')">
+            <img src="https://cdn-icons-png.flaticon.com/128/3081/3081866.png" alt="todo" class="img-filter">
+            <p class="p-filter">BEBIDAS</p>
+        </div>
+        <div class="container-item-filter" (click)="filterByCategory('burguer')">
+            <img src="https://cdn-icons-png.flaticon.com/128/6069/6069104.png" alt="todo" class="img-filter">
+            <p class="p-filter">HAMBURGUESAS</p>
+        </div>
+        <div class="container-item-filter" (click)="filterByCategory('pizza')">
+            <img src="https://cdn-icons-png.flaticon.com/128/3511/3511321.png" alt="todo" class="img-filter">
+            <p class="p-filter">PIZZAS</p>
+        </div>
+        <div class="container-item-filter" (click)="filterByCategory('specials')">
+            <img src="https://cdn-icons-png.flaticon.com/128/1609/1609988.png" alt="todo" class="img-filter">
+            <p class="p-filter">ESPECIALES</p>
+        </div>
+        <div class="button-header-main" (click)="openPanel('orderPanel')">
+            <img src="https://cdn-icons-png.flaticon.com/128/2611/2611147.png" alt="todo" class="img-filter">
+            <p class="p-filter">PEDIDO</p>
+        </div>
+    </div>
+    <div class="body-main">
+        @for (product of listProducts; track $index) {
+        <div (click)="openPanel('productPanel')" (click)="getProduct(product)" class="container-item-product">
+            <img [src]="product.img" alt={{product.name}}>
+            <div class="container-calification">
+                <img src="https://cdn-icons-png.flaticon.com/128/12709/12709532.png" alt="estrella">
+                <p>{{product.calification}}</p>
+            </div>
+            <div class="container-info-item">
+                <h3>{{product.name | uppercase}}</h3>
+                <p>
+                    {{product.description}}
+                </p>
+                <h4>$ {{product.price}}</h4>
+            </div>
+        </div>
+        }
+    </div>
+</section>

@@ -1,0 +1,8 @@
+<main>
+    <app-section-main (openPanelValue)="panelOpen($event)" (productGet)="getProduct($event)" />
+    @if (panel.panelValue) {
+        <app-order-panel (closePanelValue)="panelOpen($event)" [ordenCreate]="ordenCreate" />
+    } @else if (panel.productPanelValue) {
+        <app-product-panel [product]="productGet" (closePanelProductValue)="panelOpen($event)" (listProductOrder)="getListProductOrder($event)"  />
+    }
+</main>

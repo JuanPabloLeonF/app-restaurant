@@ -1,0 +1,61 @@
+/* Custom propierties */
+:root {
+    --font: "Raleway", sans-serif;
+    --max-width: 1200px;
+    --header-height: 4rem;
+    --black-color: rgb(0, 0, 0);
+    --gray-color: rgb(116, 116, 116);
+    --gray-opacity-color: rgba(116, 116, 116, 0.548);
+    --white-color: #ffffffff;
+    --white-gray-color: rgb(165, 165, 165);
+    --red-opacity-color: rgb(248, 133, 133);
+    --yellow-color: rgb(255, 255, 0);
+    --red-white-color: rgb(221, 69, 69);
+    --green-color: rgb(190, 240, 150);
+}
+
+/* Reset */
+html {
+    box-sizing: border-box;
+    font-family: var(--font);
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+a:visited, a {
+    color: var(--black-color);
+    transition: all 0.5s ease-out;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0,206,255);
+    background: -moz-radial-gradient(circle, rgba(0,206,255,0.6250700963979341) 1%, rgba(2,0,36,1) 81%, rgba(2,0,36,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(0,206,255,0.6250700963979341) 1%, rgba(2,0,36,1) 81%, rgba(2,0,36,1) 100%);
+    background: radial-gradient(circle, rgba(0,206,255,0.6250700963979341) 1%, rgba(2,0,36,1) 81%, rgba(2,0,36,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00ceff",endColorstr="#020024",GradientType=1); 
+    position: relative;
+}

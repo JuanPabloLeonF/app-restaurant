@@ -1,0 +1,173 @@
+.container-section-product {
+    background-color: var(--gray-opacity-color);
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.container-info-product {
+    background-color: var(--white-color);
+    max-width: 45rem;
+    width: 45rem;
+    height: 40rem;
+    border-radius: 0.5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.img {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 1%;
+    right: 1%;
+    cursor: pointer;
+}
+
+.container-product-add {
+    background-color: var(--white-color);
+    width: 35rem;
+    height: 35rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 8px 0px rgba(37, 37, 37, 0.452);
+    flex-shrink: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 10% 30% 10%;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.img-product-add {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.container-product-add h2 {
+    align-self: start;
+    color: var(--black-color);
+    font-family: "Playwrite BR", cursive;
+    font-weight: bolder;
+}
+
+.container-description-product {
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+}
+
+.container-description-product p {
+    width: 100%;
+    height: 100%;
+    font-size: 0.9rem;
+}
+
+.container-footer-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+.container-footer-items .product-price {
+    font-size: 1rem;
+}
+
+.container-add {
+    box-shadow: 0px 0px 8px 0px rgba(37, 37, 37, 0.452);
+    border-radius: 0.5rem;
+    width: 6rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.container-add img {
+    width: 40%;
+    height: 100%;
+    padding: 0.3rem 0.4rem;
+}
+
+.container-add button {
+    width: 60%;
+    height: 100%;
+    border-left: 1px dashed rgb(0, 0, 0);
+    background: none;
+    cursor: pointer;
+}
+
+.container-add:hover {
+    background-color: rgb(221, 221, 221);
+}
+
+.container-counter {
+    background-color: rgb(184, 184, 184);
+    width: 4rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 8px 0px rgba(37, 37, 37, 0.452);
+}
+
+.container-counter div:nth-child(1) {
+    border-right-style: dotted;
+    border-right-width: 0.1rem;
+    height: 100%;
+    width: 33.3%;
+    cursor: pointer;
+}
+
+.container-counter div:nth-child(1):hover {
+    background-color: rgb(212, 211, 211);
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.container-counter div:nth-child(2) {
+    height: 100%;
+    width: 33.3%;
+}
+
+.container-counter div:nth-child(3) {
+    border-left-style: dotted;
+    border-left-width: 0.1rem;
+    height: 100%;
+    width: 33.3%;
+    cursor: pointer;
+}
+
+.container-counter div:nth-child(3):hover {
+    background-color: rgb(212, 211, 211);
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

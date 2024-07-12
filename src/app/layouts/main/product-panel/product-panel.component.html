@@ -1,0 +1,29 @@
+<section class="container-section-product">
+    <div class="container-info-product">
+        <img class="img" (click)="closePanelProduct(false)" src="https://cdn-icons-png.flaticon.com/128/5974/5974916.png" alt="cerrar">
+        <div class="container-product-add">
+            <img class="img-product-add" [src]="product.img" [alt]="product.name">
+            <h2>{{product.name}}</h2>
+            <div class="container-description-product">
+                <p>{{product.description}}
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, doloribus. Fugit facere
+                    voluptate nulla a, fugiat voluptatibus beatae vero id delectus temporibus cupiditate
+                    accusamus
+                    repudiandae odio placeat aspernatur unde omnis?z
+                </p>
+            </div>
+            <div class="container-footer-items">
+                <div class="container-counter">
+                    <div (click)="counterStockFunction('decrement')" class="item"><p>-</p></div>
+                    <div class="item"><p>{{counterStock}}</p></div>
+                    <div (click)="counterStockFunction('increment')" class="item"><p>+</p></div>
+                </div>
+                <h4 class="product-price">${{product.price}}</h4>
+                <div (click)="addProduct()" class="container-add">
+                    <img src="https://cdn-icons-png.flaticon.com/128/5280/5280449.png" alt="agregar" class="img-container-app">
+                    <button class="button-add" type="button">Agregar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
